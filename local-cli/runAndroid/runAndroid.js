@@ -111,7 +111,7 @@ function buildAndRun(args, reject) {
 
   try {
     const packageName = fs.readFileSync(
-      'app/src/main/AndroidManifest.xml',
+      'app/build/intermediates/manifests/full/debug/AndroidManifest.xml',
       'utf8'
     ).match(/package="(.+?)"/)[1];
 
